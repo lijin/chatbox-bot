@@ -1,0 +1,11 @@
+applications:
+- memory: 1536M
+  instances: 1
+  domain: au-syd.mybluemix.net
+  name: jchatbox
+  host: chatbox
+  disk_quota: 1024M
+  path: target/slackjbot-1.0.0-SNAPSHOT.jar
+  buildpack: java_buildpack
+  env:
+    SPRING_PROFILES_ACTIVE : cloud
